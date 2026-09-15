@@ -1,0 +1,40 @@
+cat > .gitignore <<'EOF'
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node
+node_modules/
+dist/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# SUMO generated files
+*.log
+*.netstate.xml
+*.tripinfo.xml
+*.vehroute.xml
+*.emission.xml
+*.fcd.xml
+*.xml.gz
+
+# Environment variables
+.env
+.env.*
+
+# Python tooling
+.pytest_cache/
+.mypy_cache/
+EOF
