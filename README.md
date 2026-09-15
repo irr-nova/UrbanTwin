@@ -23,23 +23,33 @@ The system compares baseline and scenario conditions and visualizes the resultin
 ## Project Modules
 
 ### Simulation
+
 OpenStreetMap + SUMO based traffic simulation.
 
 ### AI
+
 Data processing, prediction models and ripple-effect analysis.
 
 ### Backend
+
 FastAPI-based API for scenario management and results.
 
 ### Frontend
+
 React + Vite dashboard for scenario selection and visualization.
 
 ## Repository Structure
 
-```text
 simulation/   → SUMO traffic simulation
 ai/           → AI, data processing and ripple analysis
 backend/      → FastAPI backend
 frontend/     → React + Vite frontend
 data/         → Sample/processed data
 docs/         → Project documentation
+
+
+## Team
+
+- Member 1 — SUMO / Traffic Simulation
+- Member 2 — AI / Data / Ripple Analysis
+- Member 3 — Frontend / Backend / Visualization
