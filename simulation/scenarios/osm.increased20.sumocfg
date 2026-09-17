@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 
 <!-- UrbanTwin SUMO scenario configuration -->
 
@@ -9,12 +9,12 @@
     <input>
         <net-file value="../network/osm.net.xml.gz"/>
         <route-files value="../routes/osm.passenger.trips.increased20.xml"/>
-        <additional-files value="output.add.xml"/>
+        <additional-files value="output.increased20.add.xml"/>
     </input>
 
     <output>
-        <tripinfo-output value="tripinfos.xml"/>
-        <statistic-output value="stats.xml"/>
+        <tripinfo-output value="tripinfos.increased20.xml"/>
+        <statistic-output value="stats.increased20.xml"/>
     </output>
 
     <processing>
@@ -38,3 +38,4 @@
     </gui_only>
 
 </sumoConfiguration>
+

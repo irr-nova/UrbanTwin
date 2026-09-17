@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2026-09-17T13:14:23.544045+05:30 by Eclipse SUMO sumo 1.27.1
+<!-- generated on 2026-09-17T13:42:49.012744+05:30 by Eclipse SUMO sumo 1.27.1
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
-        <net-file value=".\simulation\scenarios\../network/osm.net.xml.gz"/>
-        <route-files value=".\simulation\scenarios\../routes/osm.passenger.trips.increased20.xml"/>
-        <additional-files value=".\simulation\scenarios\output.add.xml"/>
+        <net-file value="../network/osm.net.xml.gz"/>
+        <route-files value="../routes/osm.passenger.trips.increased20.xml"/>
+        <additional-files value="output.increased20.add.xml"/>
     </input>
 
     <output>
-        <tripinfo-output value=".\simulation\scenarios\tripinfos.xml"/>
-        <statistic-output value=".\simulation\scenarios\stats.xml"/>
+        <tripinfo-output value="tripinfos.increased20.xml"/>
+        <statistic-output value="stats.increased20.xml"/>
     </output>
 
     <processing>
@@ -31,7 +31,7 @@
     </report>
 
     <gui_only>
-        <gui-settings-file value=".\simulation\scenarios\../network/osm.view.xml"/>
+        <gui-settings-file value="../network/osm.view.xml"/>
     </gui_only>
 
 </sumoConfiguration>

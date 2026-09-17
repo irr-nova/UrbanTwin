@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2026-09-17T13:14:23.545265+05:30 by Eclipse SUMO sumo 1.27.1
+<!-- generated on 2026-09-17T13:42:49.013136+05:30 by Eclipse SUMO sumo 1.27.1
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
-        <net-file value=".\simulation\scenarios\../network/osm.net.xml.gz"/>
-        <route-files value=".\simulation\scenarios\../routes/osm.passenger.trips.increased20.xml"/>
-        <additional-files value=".\simulation\scenarios\output.add.xml"/>
+        <net-file value="../network/osm.net.xml.gz"/>
+        <route-files value="../routes/osm.passenger.trips.increased20.xml"/>
+        <additional-files value="output.increased20.add.xml"/>
     </input>
 
     <output>
-        <tripinfo-output value=".\simulation\scenarios\tripinfos.xml"/>
-        <statistic-output value=".\simulation\scenarios\stats.xml"/>
+        <tripinfo-output value="tripinfos.increased20.xml"/>
+        <statistic-output value="stats.increased20.xml"/>
     </output>
 
     <processing>
@@ -31,14 +31,14 @@
     </report>
 
     <gui_only>
-        <gui-settings-file value=".\simulation\scenarios\../network/osm.view.xml"/>
+        <gui-settings-file value="../network/osm.view.xml"/>
     </gui_only>
 
 </sumoConfiguration>
 -->
 
 <statistics xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/statistic_file.xsd">
-    <performance clockBegin="308593.79" clockEnd="308594.86" clockDuration="1.06" traciDuration="5.75" realTimeFactor="3554.51" vehicleUpdatesPerSecond="47617.48" personUpdatesPerSecond="0.00" begin="0.00" end="3782.00" duration="3782.00"/>
+    <performance clockBegin="310299.13" clockEnd="310299.55" clockDuration="0.42" traciDuration="0.00" realTimeFactor="8919.81" vehicleUpdatesPerSecond="119492.92" personUpdatesPerSecond="0.00" begin="0.00" end="3782.00" duration="3782.00"/>
     <vehicles loaded="509" inserted="509" running="0" waiting="0"/>
     <teleports total="0" jam="0" yield="0" wrongLane="0"/>
     <safety collisions="0" emergencyStops="0" emergencyBraking="0"/>
