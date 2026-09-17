@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-09-17T12:59:57.849087+05:30 by Eclipse SUMO sumo 1.27.1
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="C:\Users\Shreya\UrbanTwin\simulation\scenarios\../network/osm.net.xml.gz"/>
+        <route-files value="C:\Users\Shreya\UrbanTwin\simulation\scenarios\../routes/osm.passenger.trips.xml"/>
+        <additional-files value="C:\Users\Shreya\UrbanTwin\simulation\scenarios\output.add.xml"/>
+    </input>
+
+    <output>
+        <tripinfo-output value="C:\Users\Shreya\UrbanTwin\simulation\scenarios\tripinfos.xml"/>
+        <statistic-output value="C:\Users\Shreya\UrbanTwin\simulation\scenarios\stats.xml"/>
+    </output>
+
+    <processing>
+        <ignore-route-errors value="true"/>
+        <tls.actuated.jam-threshold value="30"/>
+    </processing>
+
+    <routing>
+        <device.rerouting.adaptation-steps value="18"/>
+        <device.rerouting.adaptation-interval value="10"/>
+    </routing>
+
+    <report>
+        <verbose value="true"/>
+        <duration-log.statistics value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <gui_only>
+        <gui-settings-file value="C:\Users\Shreya\UrbanTwin\simulation\scenarios\../network/osm.view.xml"/>
+    </gui_only>
+
+</sumoConfiguration>
+-->
+
+<statistics xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/statistic_file.xsd">
+    <performance clockBegin="307728.10" clockEnd="307729.06" clockDuration="0.97" traciDuration="0.00" realTimeFactor="3884.06" vehicleUpdatesPerSecond="44875.78" personUpdatesPerSecond="0.00" begin="0.00" end="3752.00" duration="3752.00"/>
+    <vehicles loaded="424" inserted="424" running="0" waiting="0"/>
+    <teleports total="1" jam="0" yield="0" wrongLane="1"/>
+    <safety collisions="0" emergencyStops="0" emergencyBraking="0"/>
+    <persons loaded="0" running="0" jammed="0"/>
+    <personTeleports total="0" abortWait="0" wrongDest="0"/>
+    <vehicleTripStatistics count="424" routeLength="1221.62" speed="12.78" duration="102.24" waitingTime="6.44" timeLoss="31.99" departDelay="0.53" departDelayWaiting="-1.00" totalTravelTime="43350.00" totalDepartDelay="224.31"/>
+    <pedestrianStatistics number="0" routeLength="0.00" duration="0.00" timeLoss="0.00"/>
+    <rideStatistics number="0"/>
+    <transportStatistics number="0"/>
+</statistics>
