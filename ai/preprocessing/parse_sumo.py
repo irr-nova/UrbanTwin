@@ -1,8 +1,39 @@
 import xml.etree.ElementTree as ET
+
 import pandas as pd
 
 
+COLUMNS = [
+    "edge_id",
+    "interval_begin",
+    "interval_end",
+    "sampled_seconds",
+    "flow",
+    "speed",
+    "travel_time",
+    "waiting_time",
+    "time_loss",
+    "density",
+    "occupancy",
+]
+
+NUMERIC_COLUMNS = [
+    "interval_begin",
+    "interval_end",
+    "sampled_seconds",
+    "flow",
+    "speed",
+    "travel_time",
+    "waiting_time",
+    "time_loss",
+    "density",
+    "occupancy",
+]
+
+
 def parse_edge_data(xml_file):
+    """Parse SUMO edgeData XML into a DataFrame of observed edges."""
+
     tree = ET.parse(xml_file)
     root = tree.getroot()
 
@@ -29,24 +60,13 @@ def parse_edge_data(xml_file):
 
             rows.append(row)
 
-    df = pd.DataFrame(rows)
+    # Preserve a consistent set of columns even when no edges are present.
+    df = pd.DataFrame(rows, columns=COLUMNS)
 
-    numeric_columns = [
-        "interval_begin",
-        "interval_end",
-        "sampled_seconds",
-        "flow",
-        "speed",
-        "travel_time",
-        "waiting_time",
-        "time_loss",
-        "density",
-        "occupancy",
-    ]
-
-    for column in numeric_columns:
+    for column in NUMERIC_COLUMNS:
         df[column] = pd.to_numeric(df[column], errors="coerce")
 
+    # Exclude edges with missing, invalid, or zero sampled duration.
     df = df[df["sampled_seconds"] > 0].copy()
 
     return df
