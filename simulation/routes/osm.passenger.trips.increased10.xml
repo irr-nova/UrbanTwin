@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="veh_passenger" vClass="passenger" />
     <trip id="veh0" depart="0.00" from="204209805#2" to="-1378013566#3" departLane="best" type="veh_passenger" />
     <trip id="veh1" depart="8.50" from="-1188783017" to="-32553945#2" departLane="best" type="veh_passenger" departSpeed="max" />
     <trip id="veh2" depart="17.01" from="27443120#3" to="-1136378758" departLane="best" type="veh_passenger" />
@@ -424,5 +425,4 @@
     <trip id="veh421" depart="3580.19" from="204209805#2" to="214413823-AddedOnRampEdge" departLane="best" type="veh_passenger" />
     <trip id="extra10_11" depart="3581.19" from="204209805#2" to="214413823-AddedOnRampEdge" departLane="best" type="veh_passenger" /><trip id="veh422" depart="3588.69" from="-687373992#0" to="23641246#0" departLane="best" type="veh_passenger" />
     <trip id="veh423" depart="3597.20" from="1313654584" to="23641226#3" departLane="best" type="veh_passenger" />
-<vType id="veh_passenger" vClass="passenger" />
-    </routes>
+</routes>
